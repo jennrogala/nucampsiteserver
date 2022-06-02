@@ -45,6 +45,7 @@ exports.verifyAdmin = (req,res,next) => {
     } else {
        const err = new Error('You are not an Admin -not Authorized!');
        err.status = 403;
-       return next(err); 
+       //return next(err); 
+       return res.send(err.message);
     }
 }

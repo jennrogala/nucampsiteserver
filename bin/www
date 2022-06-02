@@ -33,7 +33,7 @@ server.on('listening', onListening);
 
 
 /**
- * Create HTTP server.
+ * Create HTTPS server.
  */
  const options = {
   key: fs.readFileSync(__dirname+'/server.key'),
