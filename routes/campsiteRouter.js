@@ -222,7 +222,7 @@ campsiteRouter.route('/:campsiteId/comments/:commentId')
                 .catch(err => next(err));
             } else {
                 err = new Error(`You don't own comment ${req.params.commentId} so not authorized to delete it.`);
-                err.status = 403;
+                err.status = 403;F
                 return next(err);
             }
         } else if (!campsite) {
